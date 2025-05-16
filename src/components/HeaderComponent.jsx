@@ -1,4 +1,8 @@
+import { Link } from "react-router-dom"
+import { AiOutlineHome } from "react-icons/ai"
+import { FaBlog } from "react-icons/fa"
 import "./HeaderComponent.css"
+
 function HeaderComponent(){
   return(
     <header className="header">
@@ -6,10 +10,10 @@ function HeaderComponent(){
       <nav>
         <ul className="link-list">
           <li>
-            <span className="link">Home</span>
+            <Link className="link" to="/"><AiOutlineHome /> Home</Link>
           </li>
           <li>
-            <span className="link">Bloge</span>
+            <Link className="link" to="/blog"><FaBlog /> Blog</Link>
           </li>
         </ul>
       </nav>
